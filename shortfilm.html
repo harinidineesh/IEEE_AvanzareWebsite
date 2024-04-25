@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    
+    <link rel="shortcut icon" type="x-icon"href="images/logo.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Shortfilm</title>
+
+    <!-- CSS Link  -->
+    <style>
+      body,html{
+        background-image: url(images/contact.jpg);
+        background-attachment: scroll;
+        scroll-behavior: smooth;
+        
+    }
+    #header{
+        position: fixed;
+        background:rgba(0,0,0,0.8);
+        padding: 10px 0;
+        width: 100%;
+        position: fixed;
+        left: 0;
+        top: 0;
+      }
+    
+    .navbar ul {
+        list-style-type: none;
+        margin: 0px;
+        padding: 0;
+        overflow: hidden;
+        text-align: right;
+    }
+    
+    .navbar li {
+        display: inline-block;
+    }
+    
+    .navbar a {
+        display: block;
+        padding: 8px 16px;      
+        color: antiquewhite;
+        font-size: 17px;
+        text-decoration: none;
+        text-align: center;
+    }
+    
+    .navbar li a::after {
+        content: '';
+        width:0;
+        height: 3px;
+        background-color: rgb(251, 255, 127);
+        margin: auto;
+        display: block;
+    }
+    
+    .navbar li a:hover::after {
+        width:100%;
+        transition: width 0.3s linear;
+    }
+    
+    .navbar li  a:hover {
+        color:rgb(227, 191, 114);
+    }
+    
+    .logo img {
+        float: left;
+        width: 100px;
+        height: 50px;
+    }
+    
+    .contents {
+        margin: 10px;
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+    }
+    
+    .eventname  {
+        position:absolute;
+        top:10%;
+
+        color: #fff;
+    }
+    
+    .contents img{
+      position: absolute;
+      top: 25%;
+      left: 40%;
+      border: 10px solid rgb(168, 239, 255);
+      width:300px;
+      height: 200px;
+  }
+    
+    .contents h2{
+      color: rgb(255, 255, 255);
+      position:absolute;
+      left:10%;
+      top: 5%;
+  }
+  .contents ul{
+    color: rgb(255, 255, 255);
+    position:absolute;
+    top: 15%;
+    margin-left: 10%;
+    font-size: 25px;
+  }
+  .cor h2{
+    color: rgb(255, 255, 255);
+    position:absolute;
+    top: 120%;
+    left:10%;
+}
+.cor ul{
+    color: rgb(255, 255, 255);
+    position:absolute;
+    top: 125%;
+    margin-left: 10%;
+    font-size: 25px;
+}    
+.box{
+	position: absolute;
+  margin-top: 30%;
+	margin-left:5px;
+	width: 1400px;
+	height: 750px;
+	background: rgba(0,0,0,0.75);
+	border-radius: 50px;
+
+	
+}
+   
+.boxx{
+  position:relative;
+  margin-top: 78%;
+	margin-left:45%;
+  max-width: 200px;
+  width:100rem;
+  height:auto;
+  background: rgba(155, 152, 152, 0.75);
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  
+}
+
+.boxx::after{
+	content: '';
+	position: absolute;
+	width:200px;
+	height: 100px;
+	background-image:conic-gradient(transparent,transparent,transparent,#d400d4) ;
+	animation: animate 2s linear infinite;
+	animation-delay: -3s; 
+}
+.boxx::before{
+	content: '';
+	position: absolute;
+	width:200px;
+	height: 100px;
+	background-image:conic-gradient(transparent,transparent,transparent,#00ccff) ;
+	animation: animate 2s linear infinite;
+}
+@keyframes animate {
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+	
+}
+.boxx span{
+	position: absolute;
+	inset: 7px;
+	border-radius: 30px;
+	background: #0c1022;
+	z-index: 1;
+}
+
+.boxx p{
+	
+	text-align: center;
+	z-index: 3;
+	color: #f0ee7e;
+	font-size: 1.5em;
+}
+
+  @keyframes anim-lineUp {
+	0% {
+	  opacity: 0;
+	  transform: translateY(80%);
+	}
+	20% {
+	  opacity: 0;
+	}
+	50% {
+	  opacity: 1;
+	  transform: translateY(0%);
+	}
+	100% {
+	  opacity: 1;
+	  transform: translateY(0%);
+	}
+  }
+    
+    @media screen and (max-width: 700px) {
+      body,html {
+        background-image: url(images/contact.jpg);
+        background-attachment: scroll;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: fit-content;
+
+      border-radius: 10px;
+
+      border-color: crimson;
+      position: relative;
+      z-index: 1;
+    }
+        .navbar {
+            width:auto;
+            margin-top: 10px;
+        }
+        .navbar {
+          width: auto;
+          margin-top: 10px;
+ 
+        }
+        .contents {
+          flex-direction: column;
+          align-items: center;
+
+        }
+        .eventname {
+          position: static;
+          top: 0;
+          left: 0;
+          color: #fff;
+          text-align: center;
+          margin-top: 20px;
+        }
+        .contents img {
+          width: 100%;
+          height: auto;
+          z-index: 2;
+          border: none;
+          margin-top: 20px;
+        }
+    .contents img {
+        position: relative;
+        margin-top: 25px; 
+        border: 10px solid rgb(168, 239, 255);
+        max-width: 300px; 
+        height: auto; 
+        left: 0%;
+    }
+    .contents h2{
+      color: rgb(255, 255, 255);
+      position:relative;
+      top: 0%;
+      left:0%;
+  }
+    .contents ul {
+    color: rgb(255, 255, 255);
+    position: relative;
+    font-size: 18px;
+    top: 0%; 
+    text-align: left; 
+}    .box {
+  position: relative;
+  margin-top: 30%; 
+  margin-left:0px;
+  width:auto;
+  height: auto;
+  border-radius: 10px;
+
+}
+
+        
+        .boxx{
+          position:relative;
+          margin-top: 0%;
+          margin-left: 0%;
+          max-width: 200px;
+          width:100rem;
+          height:auto;
+          background: rgba(155, 152, 152, 0.75);
+          border-radius: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          overflow: hidden;
+          
+        }
+
+        
+        .boxx::after{
+          content: '';
+          position: absolute;
+          width:300px;
+          height: 100px;
+          background-image:conic-gradient(transparent,transparent,transparent,#d400d4) ;
+          animation: animate 2s linear infinite;
+          animation-delay: -3s; 
+        }
+        .boxx::before{
+          content: '';
+          position: absolute;
+          width:200px;
+          height: 100px;
+          background-image:conic-gradient(transparent,transparent,transparent,#00ccff) ;
+          animation: animate 2s linear infinite;
+        }
+        @keyframes animate {
+          0%{
+            transform: rotate(0deg);
+          }
+          100%{
+            transform: rotate(360deg);
+          }
+          
+        }
+        .boxx span{
+          position: absolute;
+          inset: 5px;
+          border-radius: 30px;
+          background: #0c1022;
+          z-index: 1;
+        }
+        
+        .boxx p{
+          
+          text-align: center;
+          z-index: 3;
+          color: #f0ee7e;
+          font-size: 1.5em;
+        }
+        
+          @keyframes anim-lineUp {
+          0% {
+            opacity: 0;
+            transform: translateY(80%);
+          }
+          20% {
+            opacity: 0;
+          }
+          50% {
+            opacity: 1;
+            transform: translateY(0%);
+          }
+          100% {
+            opacity: 1;
+            transform: translateY(0%);
+          }
+          }
+    }
+    
+    </style>
+     
+  </head>
+  <body>
+    <header id="header">
+        <div class="logo"><img src="images/logo.jpg"> </div>
+        <div class="navbar">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+            </ul>
+        </div>
+        
+        </header>
+        <div class="contents">
+            <div class="eventname">
+            <h1>SHORTFILM</h1><hr></div>
+            <img src="images/shortfilm.jpg">
+            <div class="box">
+              
+            <h2>INSTRUCTIONS</h2>
+
+            <ul type="disc">
+                <li>For IEEE member 150/- per team and Non-IEEE member 200/- per team. <a href="combo.html"style="color:white;">Click here for Combo pack!</a></li>
+                <li>It is an Offline Event. The director of the short film should register along with the cast & crew(max 5).
+                    <li>Duration for Short Film must be minimum 3 minutes .</li>
+                    <li>There is no particular theme for the short film. It can be based on any theme.All content must be original.</li>
+                    <li>Films submitted to the competition should refrain from using vulgar language and profanity.</li>
+                        <li> The decision taken by judges and organizers would be final.</li></li>
+                    
+                
+                  
+                <li>Certificates will be provided for all the participants.</li>
+                <li>Lunch will be provided.</li>
+                <li>Prize winners will be honoured with certificates at our valedictory function.</li>
+                <li>The Participants will be disqualified at any point of time if they engage in any malpractice or fails to meet the event criteria.</li>
+            </ul>
+            </div>
+            </div>
+            <br><br>
+            <!-- <div class="cor">
+            <h2>COORDINATORS</h2>
+            <ul>
+                <li>Harini M - 9345394342</li>
+                <li>Karthika R S - 483754858349</li>
+            </ul>
+    </div> -->
+<a href="https://forms.gle/rNeBFJaDG4LoWEep8">
+    <div class="boxx">
+      <span> </span>
+  <p>Register here!</p>
+      
+   </div>
+       
+      </a>
+    </body>
+    </html>

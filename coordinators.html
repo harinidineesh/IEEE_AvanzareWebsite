@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    
+    <link rel="shortcut icon" type="x-icon"href="logo.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Coordinators</title>
+
+    <!-- CSS Link  -->
+    <style>
+      @media only screen and (max-width: 700px) {}
+      body,html{
+    background-image: url(images/bgav.jpg);
+    background-attachment: scroll;
+    scroll-behavior: smooth;
+    
+}
+#header{
+    background:rgba(0,0,0,0.8);
+    padding: 10px 0;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+  }
+
+  .header{
+    text-decoration: underline;
+    text-shadow: seashell;
+  }
+  .navbar ul{
+      list-style-type: none;
+      margin: 0px;
+      padding: 0;
+      overflow: hidden;
+      text-align: right;
+      }
+  .navbar li
+      {
+          display: inline-block;
+      }
+  .navbar a{
+      display: block;
+      padding: 8px 16px;		
+      color: antiquewhite;
+      font-size: 17px;
+      text-decoration: none;
+  text-align: center;
+  }
+  .navbar li a::after {
+      content: '';
+      width:0;
+      height: 3px;
+      background-color: rgb(251, 255, 127);
+      margin: auto;
+      display: block;
+  }
+  .navbar li a:hover::after{
+      width:100%;
+      transition: width 0.3s linear;
+  }
+  .navbar li  a:hover{
+      color:rgb(227, 191, 114) ;
+  }
+  .logo img{
+	float: left;
+	width: 100px;
+	height: 50px;
+}
+.contents{
+    margin: 10px;
+    display: flex;
+    
+}
+
+body{
+        background-image:url("images/bgav.jpg");
+        display:flex;
+        flex-direction: column;
+        background-size: cover;
+       align-items:center; 
+       justify-content:center;
+           }
+
+    p{
+            font-size: 14px;
+        }
+
+
+    .container
+    {
+        position:relative;
+        width:1100px;
+       display:flex;
+       justify-content: center;
+       align-items: center;
+       flex-wrap: wrap;
+       padding: 30px;
+
+
+    }
+    .container .cards
+    {
+        position: relative;
+        max-width: 300px;
+        height: 350px;
+        background: blur;
+        margin: 30px 20px;
+        padding: 20px 15px;
+        display:flex;
+        flex-direction: column;
+        box-shadow: none;
+        transition: 0.3s ease-in-out;
+        border-radius: 50px;
+
+    }
+
+    .container .card:hover{
+        height: 300px;
+
+    }
+
+    .container .cards .imagebox
+{
+    position: relative;
+    width: 200px;
+    height:200px;
+    top: -50px;
+    left:-20px;
+    z-index:1;
+    box-shadow: 0 5px 20px grey;
+    border-radius: 100px;
+  overflow: hidden;
+
+
+
+}
+.container .cards .imagebox image{
+    max-width: 250px;
+    height: 200px;
+    position: centre;
+    display: block;
+   
+}
+
+.container .cards .content{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: white;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+
+
+}
+.container .cards:hover .content{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.2s;
+}
+
+.header{
+    font-family: Times New Roman;
+    color:white;
+    text-align: center;
+    display: flex;
+}
+.all{
+    align-items: center;
+    margin: 0px;
+}
+
+h1{
+    text-align: centre;
+     align-items: center;
+     margin-left: 30%;
+     font-family: Times New Roman;
+
+ }
+ @media screen and (max-width:700px) {
+    .container
+    {
+       flex-direction: column;
+
+    }
+    
+ }
+
+
+
+</style>
+     
+    </head>
+
+
+    <body>
+      <header id="header">
+          <div class="logo"><img src="images/logo.jpg"> </div>
+          <div class="navbar">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+              </ul>
+          </div>
+          
+          </header>
+
+
+      <div class="contents">
+            </div>
+
+            
+<div class="all">
+  <br>
+  <br>
+  <br>
+    <h1 class="header">BRANCH-COUNSELLOR</h1>
+    <div class="container">
+
+    <div class="cards">
+    <div class="imagebox">
+        <img src="images/viji.jpg" width="200" height="200">
+    </div>
+    <div class="content">
+        <h3>DR.VIJAYALKSHMI J</h3>
+        <p> <pre>Branch Counsellor,</pre>
+           <pre> IEEE,KEC Student Branch.</pre>
+            <pre>jvijayalakshmi.ece@kongu.edu</pre>
+            <pre>Contact: 9659343425</pre></p>
+    </div>
+</div>
+</div>
+    
+        <h1 class="header">PILLARS OF AVANZARE</h1>   <
+    
+
+<div class="container">
+
+     
+    <div class="cards">
+    <div class="imagebox">
+        <img src="images/vignesh.jpeg" width="200" height="200">
+    </div>
+    <div class="content">
+        <h3>Mr.VIGNESH S</h3>
+        <p> <pre>Chairman,IEEE,</pre>
+            <pre>KEC Student Branch.</pre>
+           <pre> vigneshs.20mech@kongu.edu</pre>
+           <pre> Contact: 6383809688</pre></p>
+    </div>
+</div>
+<div class="cards">
+    <div class="imagebox">
+        <img src="images/asmi.jpg" width="200" height="200">
+    </div>
+    <div class="content">
+        <h2>Ms.ASHMITA R S</h2>
+        <p><pre> Vice Chairman,IEEE,</pre>
+        <pre>KEC Student Branch.</pre>
+        <pre> ashmitars.20eee@kongu.edu</pre>
+        <pre>Contact: 8056487812</pre></p>
+    </div>
+</div>
+<div class="cards">
+    <div class="imagebox">
+        <img src="images/kousi.jpg" width="200" height="200">
+    </div>
+    <div class="content">
+        <h2>Ms.KAUSIKA S</h2>
+        <p> <pre>Secretary, IEEE,</pre>
+            <pre>KEC Student Branch.</pre>
+           <pre> kausikas.20ece@kongu.edu</pre>
+            <pre>Contact: 8870889949</pre></p>
+    </div>
+</div>
+<div class="cards">
+    <div class="imagebox">
+        <img src="images/karti.jpg" width="200" height="200">
+    </div>
+    <div class="content">
+        <h2>Mr.KARTEESWAR K P </h2>
+        <p> <pre>Vice Chairman,IEEE,</pre>
+           <pre> KEC Student Branch.</pre>
+            <pre>karteeswarkp.20ece@kongu.edu</pre>
+            <pre>Contact: 8056487812</pre></p>
+    </div>
+</div>
+</div>
+
+<h1 class="header">EVENT CO-ORDINATORS</h1>   <
+    
+
+<div class="container">
+
+     
+    <div class="cards">
+    <div class="imagebox">
+        <img src="images/sanjay.jpg" width="200" height="200">
+    </div>
+    <div class="content">
+        <h3>Mr. SANJAY BALAJI M</h3>
+        <p> <pre>Chair Editorial Commitee,IEEE</pre>
+            <pre>KEC Student Branch.</pre>
+           <pre> sanjaybalajim.21eee@kongu.edu</pre>
+           <pre> Contact: 9894493553</pre></p>
+    </div>
+</div>
+
+<div class="cards">
+    <div class="imagebox">
+        <img src="images/mukilesh.jpg" width="200" height="200">
+    </div>
+    <div class="content">
+        <h2>Mr. MUKILESH J S</h2>
+        <p> <pre>Event Management Team,CS,IEEE,</pre>
+            <pre>KEC Student Branch.</pre>
+           <pre> mukileshjs.21eie@kongu.edu</pre>
+            <pre>Contact: 9043680939</pre></p>
+    </div>
+</div>
+
+<div class="cards">
+    <div class="imagebox">
+        <img src="images/amirtha.jpg" width="200" height="200">
+    </div>
+    <div class="content">
+        <h2>Ms.AMIRTHAVARSHINI S A</h2>
+    <p><pre>Additional Secretary,
+Membership development,IEEE,</pre>
+        <pre>KEC Student Branch.</pre>
+        <pre> amirthavarshinisa.21ece@kongu.edu</pre>
+        <pre>Contact: 8637410244</pre></p>
+    </div>
+</div>
+
+</div>
+
+
+
+<h1 class="header" >WEB DEVELOPMENT TEAM </h1>
+<div class="container">
+<div class="cards">
+    <div class="imagebox">
+        <img src="images/harii.jpg" width="200" height="200">
+    </div>
+    <div class="content">
+        <h2>Ms.HARINI M</h2>
+        <p> <pre>Joint treasurer,PES,IEEE,</pre>
+           <pre> KEC Student Branch.</pre></pre>
+           <pre>harinim.21ece@kongu.edu</pre>
+           <pre> Contact: 9345394342</pre></p>
+    </div>
+</div>
+
+<div class="cards">
+    <div class="imagebox">
+        <img src="images/karthi.jpg" width="200" height="200">
+    </div>
+    <div class="content">
+        <h2>Ms.KARTHIKA R S</h2>
+        <p> <pre>Additional secretary,APS,IEEE,</pre>
+        <pre>KEC Student Branch.</pre>
+         <pre>karthikars.21ece@kongu.edu</pre>
+         <pre>Contact: 9865749177</pre></p>
+    </div>
+</div>
+
+<div class="cards">
+    <div class="imagebox">
+        <img src="images/nisha.jpg" width="200" height="200">
+    </div>
+    <div class="content">
+        <h2>Ms.HARINISHA J</h2>
+        <p> <pre>Additional secretary,IEEE,</pre>
+        <pre>KEC Student Branch.</pre>
+         <pre>harinishaj.21ece@kongu.edu</pre>
+         <pre>Contact: 9789706598</pre></p>
+    </div>
+</div>
+
+
+
+</div>
+
+</div>
+
+
+
+
+            </body>
+            </html>
